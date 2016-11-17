@@ -15,7 +15,7 @@ cc.Class({
         cc.director.getCollisionManager().enabled = true;
 
         this.Gametype = DEFINE.Gametype().running;
-        this.BGMoveSpeed = 500;
+        this.BGMoveSpeed = 200;
         this.Level = 1;
 
         this.EnemyCreateCon();

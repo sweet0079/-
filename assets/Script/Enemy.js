@@ -17,23 +17,23 @@ cc.Class({
     },
     onLoad: function () {
         this.path = 0;
-        if (cc.random0To1() * 3 > 2) {
-            this.node.y = cc.random0To1() * 820 - 410;
+       // if (cc.random0To1() * 3 > 2) {
+            this.node.y = cc.random0To1() * 220-180;//-180到40
             this.node.x = 690;
-        }
-        else {
-            this.node.x = cc.random0To1() * (690 + this.targetX) - this.targetX;
-            if (cc.random0To1() * 2 > 1) {
-                this.node.y = -410;
-            }
-            else {
-                this.node.y = 410;
-            }
-            if (cc.random0To1() * 2 > 1) {
-                this.path = 1;
-                this.targetX += this.Path;
-            }
-        }
+        //}
+        // else {
+        //     this.node.x = cc.random0To1() * (690 + this.targetX) - this.targetX;
+        //     if (cc.random0To1() * 2 > 1) {
+        //         this.node.y = -410;
+        //     }
+        //     else {
+        //         this.node.y = 410;
+        //     }
+        //     if (cc.random0To1() * 2 > 1) {
+        //         this.path = 1;
+        //         this.targetX += this.Path;
+        //     }
+        // }
         var X = this.node.x - this.targetX;
         var Y = Math.abs(this.node.y);
         this.dis = Math.sqrt(X * X + Y * Y);
